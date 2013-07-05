@@ -2,23 +2,24 @@ Installation
 
     git clone https://github.com/jlisinski/dotvim.git ~/.vim
 
+
 Create symbolic links
 
     ln -s dotfiles/vimrc ~/.vimrc
     ln -s dotfiles/gvimrc ~/.gvimrc
 
-Installing Pathogen as git submodule
 
-    cd ~/.vim
-    git submodule add https://github.com/tpope/vim-pathogen.git pathogen
-    mkdir autoload
-    ln -s ~/.vim/pathogen/pathogen.vim pathogen.vim
-    
-Get submodules
+Get plugins as git submodules
 
     cd ~/.vim
     git submodule init
     git submodule update
+
+Configure Pathogen 
+
+    mkdir ~/.vim/autoload
+    ln -s ~/.vim/pathogen/pathogen.vim ~/.vim/autoload/pathogen.vim
+ 
 
 
 
